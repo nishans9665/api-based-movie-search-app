@@ -1,0 +1,165 @@
+/* General */
+body {
+    margin: 0;
+    padding: 0;
+    background: #0e0e0e;
+    color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 30px 20px;
+    background: #161616;
+    border-bottom: 2px solid #1f1f1f;
+}
+
+.logo {
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+/* Search Area */
+.search-area {
+    margin-top: 20px;
+}
+
+.search-area input {
+    width: 300px;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+.btn {
+    padding: 12px 20px;
+    margin-left: 5px;
+    background: #ff3d3d;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ff5c5c;
+}
+
+.btn.secondary {
+    background: #1c7dff;
+}
+
+.btn.secondary:hover {
+    background: #4a98ff;
+}
+
+/* Keyword Section */
+.keywords-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.keywords-section h2 {
+    margin-bottom: 15px;
+}
+
+.keywords button {
+    padding: 10px 16px;
+    margin: 5px;
+    border-radius: 6px;
+    border: none;
+    background: #252525;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.keywords button:hover {
+    background: #373737;
+}
+
+/* Movie Section */
+.movies-section {
+    padding: 20px 40px;
+}
+
+.movies-section h2 {
+    margin-bottom: 15px;
+}
+
+/* Movie Grid */
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+/* Movie Card */
+.movie-card {
+    background: #1a1a1a;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+.movie-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.movie-card h3 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+}
+
+.movie-card p {
+    color: #bbbbbb;
+}
+
+
+/* ------------------------- */
+
+/* Movie Details Page */
+.movie-details-container {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.movie-details-card {
+    background: #1a1a1a;
+    padding: 25px;
+    border-radius: 15px;
+    max-width: 800px;
+    display: flex;
+    gap: 25px;
+}
+
+.movie-details-card img {
+    width: 280px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.movie-details-card h1 {
+    margin: 0 0 10px 0;
+}
+
+.movie-details-card p {
+    margin: 6px 0;
+    line-height: 1.5;
+}
