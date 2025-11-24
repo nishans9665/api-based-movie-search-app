@@ -18,7 +18,6 @@ async function loadMovie() {
             <p><b>Plot:</b> ${data.Plot}</p>
             <p><b>IMDB Rating:</b> ⭐ ${data.imdbRating}</p>
         </div>
-    `;
-}
+    `;}
 
 loadMovie();
