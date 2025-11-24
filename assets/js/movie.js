@@ -1,12 +1,10 @@
-const API_KEY = "2f426807";
-
-const params = new URLSearchParams(window.location.search);
-const movieID = params.get("id");
+let params = new URLSearchParams(window.location.search);
+let movieID = params.get("id");
 
 async function loadMovie() {
-    const url = `https://www.omdbapi.com/?apikey=${API_KEY}&i=${movieID}`;
-    const res = await fetch(url);
-    const data = await res.json();
+    let url = `https://www.omdbapi.com/?apikey=${API_KEY}&i=${movieID}`;
+    let res = await fetch(url);
+    let data = await res.json();
 
     document.getElementById("movieDetails").innerHTML = `
         <img src="${data.Poster}" alt="${data.Title}">
