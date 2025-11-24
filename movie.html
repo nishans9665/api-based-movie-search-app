@@ -5,27 +5,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Details</title>
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
+    <!-- HEADER -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.png" alt="Logo">
+            </a>
 
-     <header class="header">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto gap-5">
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#movies-section">Movies</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Categories</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- <header class="header">
         <h1 class="logo">Movie Explorer</h1>
         <button class="btn secondary" onclick="goHome()">⬅ Back to Home</button>
-    </header>
+    </header> -->
 
     <section class="movie-details-container">
         <div id="movieDetails" class="movie-details-card"></div>
     </section>
 
+    <!-- <div>
+        <button class="btn secondary" onclick="goHome()">⬅ Back to Home</button>
+    </div>
     <script>
         function goHome() {
             window.location.href = "index.html";
         }
-    </script>
+    </script> -->
 
+    <footer class="footer-bar">
+        <p>© 2025 All Rights Reserved. Development by Nishan</p>
+    </footer>
+    
+    <script src="assets/js/app.js"></script>
     <script src="assets/js/movie.js"></script>
 
 </body>
