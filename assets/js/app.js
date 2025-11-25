@@ -35,7 +35,9 @@ async function searchAndDisplay(query) {
 function displayMovies(list) {
     let html = "";
 
-    list.forEach(movie => {
+    let limitedList = list.slice(0, 8);
+
+    limitedList.forEach(movie => {
         html += `
         <div class="movie-card" onclick="openMovie('${movie.imdbID}')">
             <img src="${movie.Poster}">
@@ -56,7 +58,7 @@ function openMovie(id) {
 }
 
 
-let randomList = ["batman", "avengers", "love", "war", "matrix"];
+let randomList = ["thriller", "avengers", "love", "war", "matrix"];
 
 async function randomMovie() {
     let keyword = randomList[Math.floor(Math.random() * randomList.length)];
@@ -115,3 +117,4 @@ function keywordSearch(key) {
 // run on load
 document.addEventListener("DOMContentLoaded", loadTopRatedMovies);
 document.addEventListener("DOMContentLoaded", searchMovie);
+

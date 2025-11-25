@@ -279,7 +279,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     gap: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .movie-card {
@@ -308,3 +308,4 @@ footer {
     margin-top: 40px;
     font-size: 14px;
 }
+

@@ -27,7 +27,7 @@
                 <ul class="navbar-nav ms-auto gap-5">
                     <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="#movies-section">Movies</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#">Categories</a></li>
+                    <button class="btn btn-danger" onclick="randomMovie()">Discover a Movie</button>
                 </ul>
             </div>
         </nav>
@@ -66,12 +66,11 @@
             <h2 class="text-white mb-3">Browse by Keywords</h2>
 
             <div class="keywords">
-                <button onclick="keywordSearch('batman')">Batman</button>
+                <button onclick="keywordSearch('thriller')">Thriller</button>
                 <button onclick="keywordSearch('love')">Love</button>
                 <button onclick="keywordSearch('war')">War</button>
                 <button onclick="keywordSearch('action')">Action</button>
                 <button onclick="keywordSearch('comedy')">Comedy</button>
-                <button class="btn secondary" onclick="randomMovie()">Discover a Movie</button>
             </div>
         </div>
 
@@ -91,7 +90,7 @@
     <!-- Search Results -->
     <section class="movies-section">
         <h2>Search Results</h2>
-        <div id="results" class="movie-grid"></div>
+         <div id="results" class="movie-grid"></div>
     </section>
 
     <!-- Top Rated Movies -->
