@@ -3,7 +3,9 @@
 This is a responsive movie search application built using JavaScript, Bootstrap, and the OMDb API.  
 Users can search movies by name, browse keyword shortcuts, discover random movies, and view top-rated movie lists.
 
-## Features
+<img width="1902" height="1027" alt="image" src="https://github.com/user-attachments/assets/6180affb-1224-4e92-8f74-44ee350db2f8" />
+
+---
 
 ### Movie Search
 - Search movies by typing a name and pressing Enter.
